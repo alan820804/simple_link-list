@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+
+
+struct node
+{
+   char name[80];
+   struct node *next;
+};
+
+typedef struct node  Node;
+
+
+
+int main()
+{
+   Node x,y,*head,*current;
+   strcpy(x.name,"John");
+   strcpy(y.name,"Mary");
+   head=&x;
+   x.next=&y;
+   y.next=NULL;
+   current=head;
+   while(current!=NULL)
+   {
+     printf("%s\n",current->name);
+     current=current->next;
+
+
+   }
+
+}
